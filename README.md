@@ -16,7 +16,7 @@ openpyxl is used to read and write Excel/csv files with '.xlsx' or '.csv' format
 
 Documentation for pandas: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_excel.html
 
-#Syntax & Arguments:
+# Syntax & Arguments:
 Just run the python script and follow the instruction.
 You will choose the output file format you want - "csv" or "xlsx".
 When choosing the path to file remember to choose only xlsx/csv file , otherwise the script won't run and will preform exit.
@@ -24,12 +24,12 @@ When choosing the path to file remember to choose only xlsx/csv file , otherwise
 example - how to run the script:
 python IndicatorToExcel.py
 
-#Return Value:
+# Return Value:
 The output of this python script is a CSV/Excel file which built in specific way and structure in aim to upload/append it to the existing Master indicators list.
 
 It might return a error in case you didn't follow the instruction above.
 
-#LinkedIn: https://www.linkedin.com/in/daniel-tredler-06761b213/
-#GitHub: https://github.com/TDanny/
+# LinkedIn: https://www.linkedin.com/in/daniel-tredler-06761b213/
+# GitHub: https://github.com/TDanny/
 
-#Danny Tred
+# Danny Tred
