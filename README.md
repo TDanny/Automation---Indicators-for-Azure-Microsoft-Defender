@@ -1,5 +1,5 @@
-# Automation-Scripts
-Automation Scripts I created for the use of IT &amp; Software departments.
+# Automation - Creating Indicators upload format for Azure Microsoft Defender in seconds
+Automation Script I created for the use of IT & Software departments - saves time that can be dedicated to other priorities.
 
 # ReadMe
 Hey,
