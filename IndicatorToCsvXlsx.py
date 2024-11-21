@@ -118,7 +118,7 @@ if __name__ == '__main__':
                         break
 
         if flag_EOF:
-            print("IM HERE 2")
+            print("END OF FILE")
             break
         if not values:
             continue
