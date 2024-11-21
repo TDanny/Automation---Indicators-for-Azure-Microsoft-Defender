@@ -79,10 +79,13 @@ if __name__ == '__main__':
         values = []
         if flag_EOF:
             break
-        for column in ['emailIdentifier','sha256','domain','IP','url']:
+        for column in ['emailIdentifier','sha256','domain','IP','url','md5']:
             flag_EOF = True
             value = row[column]
             if pandas.notna(value) and value != '':
+                if column == 'md5':
+                    flag_EOF = False
+                    continue
                 if column == 'IP':
                     value = value.replace('[.]', '.')
                 if column == 'domain':
@@ -117,6 +120,8 @@ if __name__ == '__main__':
         if flag_EOF:
             print("IM HERE 2")
             break
+        if not values:
+            continue
         # Join the collected values with a separator
         filtered_df.at[index, 'IndicatorValue'] = ', '.join(values)
         filtered_df.at[index, 'Title'] = "CertIL ID " + str(int(dataframe.at[index, 'reportId'])) + ' ' \
