@@ -132,7 +132,14 @@ if __name__ == '__main__':
         filtered_df.at[index, 'GenerateAlert'] = 'TRUE'
 
     if output_format == "1":
-        filtered_df.to_csv(output_file, index=False)
+        if os.path.exists(output_file):
+            # Append to the file if it exists
+            filtered_df.to_csv(output_file, mode='a', index=False, header=False)
+            print(f"Appended to {output_file}.")
+        else:
+            # Create a new file if it doesn't exist
+            filtered_df.to_csv(output_file, index=False)
+            print(f"Created new file: {output_file}.")
     if output_format == "2":
         filtered_df.to_excel(output_file, index=False)
     print("Thanks for using my script - TDanny \nGithub: https://github.com/TDanny/\n ")
