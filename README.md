@@ -5,11 +5,14 @@ Automation Script I created for the use of IT & Software departments - saves tim
 Hey,
 IndicatorToCsvXlsx.py is python script which automize the process of updating Azure Microsoft Defender Indicators list.
 The National Cyber department often publish a document which includes a list of identifiers/indicators of malicious files/domains/urls/IPs and etc.
-Instead of wasting time a new CSV file in the format in which azure cloud Defender works with  - I created a script which will do it for you.
+Instead of wasting time creating a new CSV file in the format in which azure cloud Defender works with  - I created a script which will do it for you.
 It saves time and all you need to do after running the scripts is to edit by yourself the "RecommendedActions" because its changes between each vulnerability published. 
 
 Note: you must install pandas openpyxl for the script to run, use the command :
 pip install pandas openpyxl
+
+OR:
+python -m pip install pandas
 
 pandas is a library used for data manipulation.
 openpyxl is used to read and write Excel/csv files with '.xlsx' or '.csv' format.
